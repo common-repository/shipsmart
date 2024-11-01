@@ -1,0 +1,77 @@
+.ShipSmart {
+    &__checkout {
+        &-title {
+            display: flex;
+            align-items: center;
+            margin-left: 1vw;
+
+            h1 {
+                font-size: inherit;
+                font-weight: bold;
+            }
+        }
+
+        &-description {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        &-labels {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &-total {
+            margin-top: 2vh;
+            font-weight: bold;
+        }
+    }
+}
+
+.woocommerce-shipping-totals.shipping {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.shipping__table {
+    tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.shop_table {
+     td{
+        text-align: right !important;
+     }
+  
+     td.product-name {
+        text-align: left !important;
+     }
+}
+
+.shipping__list_label {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+
+    .ShipSmart__checkout-title {
+        flex-direction: column;
+        display: flex;
+        margin-left: 1vh;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-end !important;
+
+        h1 {
+            width: auto;
+            display: flex;
+            margin: 0 0 10px !important;
+        }
+    }
+}
+

@@ -1,0 +1,108 @@
+.ShipSmart {
+  &__order {
+    &-notekey {
+      display: flex;
+      flex-direction: column;
+  
+      p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+        
+        label {
+          margin-left: 1vw;
+          min-width: 10%;
+        }
+      }
+    }
+
+    &-input {
+      width: 80%;
+      // height: 33px;
+
+      &.checkbox {
+        margin-left: 15px;
+      }
+      
+      &-group {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-field {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+
+    &-status {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-documents {
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        font-weight: bold!important;
+      }
+    }
+
+    &-update {
+        margin-top: 44px;
+        width: 220px;
+        display: inline-block;
+        padding: 8px 2em;
+        border-radius: 7px;
+        background: linear-gradient(to right, #fcbf0a 0%, #ff9c00 100%) !important;
+        color: white !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+
+    }
+
+    &-update:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,.3);
+      overflow: hidden;
+    }
+      
+    &-group {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 5vh;
+
+      &--label {
+        min-width: 20%;
+      }
+
+      &--link {
+        min-width: 20%;
+        margin: 3vh 0 3vh 1vw;
+      }
+    }
+
+    &-button {
+      margin: 1vw!important;
+    }
+
+    &-meta {
+      min-width: 7vw;
+    }
+  }
+}
+
+#order_shipping_line_items table {
+  display: none;
+}
+
+.Show {
+  display: flex!important;
+}
